@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link rel="icon" href="assets/icons/IUTEPAL.svg " />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/principal.css" />
+  </head>
+
+  <body class="light">
+
+    <div class="spinner" id="contenedor-carga">
+      <div id="carga">
+
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="bx bxl-c-plus-plus"></i>
+          <div class="logo_name">IUTEPAL</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Buscar..." />
+
+          <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bx-grid-alt"></i>
+
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Iniciar Sesion</span>
+          </a>
+          <span class="tooltip">Iniciar Sesion</span>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="bx bx-chat"></i>
+
+            <span class="links_name">Quienes Somos</span>
+          </a>
+          <span class="tooltip">Quienes Somos</span>
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bxs-landscape"></i>
+
+            <span class="links_name">Mision</span>
+          </a>
+          <span class="tooltip">Mision</span>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="bx bxs-analyse"></i>
+
+            <span class="links_name">Vision</span>
+          </a>
+          <span class="tooltip">Vision</span>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="bx bx-history"></i>
+
+            <span class="links_name">Historia</span>
+          </a>
+          <span class="tooltip">Historia</span>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="bx bx-image-alt"></i>
+
+            <span class="links_name">Galeria</span>
+          </a>
+          <span class="tooltip">Galeria</span>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="bx bx-cog"></i>
+
+            <span class="links_name">Ajustes</span>
+          </a>
+          <span class="tooltip">Ajustes</span>
+        </li>
+      </ul>
+      <div class="profile_content">
+        <div class="profile">
+          <div class="profile_details">
+            <img src="assets/images/perfil.jpeg" alt="" />
+            <div class="name_job">
+              <div class="name">Kelvin Valera</div>
+              <div class="job">Web Designer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="home_content">
+      <header class="header">
+        <div class="switches">
+          <div id="toggle-theme" class="toggle-theme">
+            <img
+              id="toggle-icon"
+              src="assets/icons/luna.svg"
+              alt=""
+              class="toggle-theme_icon"
+            />
+            <p id="toggle-text" class="toggle-theme_text">Modo Oscuro</p>
+          </div>
+          
+        </div>
+
+
+        <div id="toggle-colors" class="colors">
+          <div
+            data-color="#0f1c30"
+            class="colors-item colors-item_primary"
+          ></div>
+
+          <div
+            data-color="#304a6e"
+            class="colors-item colors-item_secondary"
+          ></div>
+
+          <div
+            data-color="#cddefc"
+            class="colors-item colors-item_tertiary"
+          ></div>
+
+          <div data-color="#c2c6ce" class="colors-item colors-item_for"></div>
+        </div>
+      </header>
+
+      <div class="cabecera">
+        <div class="logo">
+          <img src="assets/icons/IUTEPAL.svg" alt="" />
+        </div>
+
+        <h1 class="titulo">Instituto Universitario de Tecnología</h1>
+
+        <h2 class="subtitulo">Juan Pablo Pérez Alfonzo</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+          voluptatibus dicta, esse similique, a qui voluptatem nihil, et sit ex
+          asperiores voluptates fuga odio obcaecati! Veritatis et vitae quaerat
+          corrupti!
+        </p>
+
+        <button class="btn-cabecera"><a href="registro.html">Registrarme</a></button>
+      </div>
+
+     
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
