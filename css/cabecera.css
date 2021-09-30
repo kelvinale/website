@@ -22,7 +22,8 @@
     ),
     url(/assets/images/cabecera.jpg);
   background-position: center;
-  /* background-attachment: fixed; */
+  background-size: cover;
+  background-attachment: fixed;
 
   display: flex;
   flex-direction: column;
@@ -72,7 +73,7 @@
 body.dark button{
     background: var(--gris-primario);
     transition: var(--transition);
-    color: var(--color-primario);
+    
 }
 
 button:hover{
@@ -93,8 +94,9 @@ button:hover a {
   color: var(--color-primario);
 }
 
+
 body.dark button a{
-    color: var(--gris-primario-primario);
+    color: var(--color-primario);
 }
 
 body.dark button:hover{
@@ -106,3 +108,89 @@ body.dark button:hover a{
     color: var(--gris-primario);
   transition: var(--transition);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1800px){
+  .cabecera p{
+    width: 50%;
+  }
+
+  .btn-cabecera{
+    width: 10%;
+  }
+}
+
+@media (max-width: 1800px){
+  .cabecera p{
+    width: 50%;
+  }
+
+  .btn-cabecera{
+    width: 10%;
+  }
+}
+
+@media (max-width: 960px){
+.cabecera img{
+  width: 80px;
+  height: 80px;
+
+}
+
+  .cabecera h1{
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  .cabecera h2{
+    font-size: 1.2em;
+  }
+
+  .cabecera p{
+    font-size: .9rem;
+  }
+
+  .btn-cabecera{
+    width: 15%;
+  }
+}
+
+@media (max-width: 400px){
+
+  .cabecera{
+    overflow: hidden;
+  }
+  .cabecera img{
+    width: 70px;
+    height: 70px;
+  
+  }
+  
+    .cabecera h1{
+      font-size: 1em;
+      margin-top: 10px;
+    }
+  
+    .cabecera h2{
+      font-size: 1em;
+    }
+  
+    .cabecera p{
+      width: 90%;
+      font-size: .9rem;
+    }
+  
+    .btn-cabecera{
+      width: 50%;
+    }
+  }
