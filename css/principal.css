@@ -1,4 +1,6 @@
 @import url(cabecera.css);
+@import url(mision.css);
+
 
 :root {
   --color-primario: #0f1c30;
@@ -10,11 +12,15 @@
   --transition: color .4s, background-color .6s ease-in-out;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
+:root {
+  --color-primario: #0f1c30;
+  --color-secundario: #304a6e;
+  --color-terciario: #cddefc;
+  --gris-primario: #c2c6ce;
+  --light: #fff;
 
+  --transition: color .4s, background-color .6s ease-in-out;
+}
 
 
 /* spinner de carga */
