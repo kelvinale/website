@@ -1,0 +1,83 @@
+:root {
+  --color-primario: #0f1c30;
+  --color-secundario: #304a6e;
+  --color-terciario: #cddefc;
+  --gris-primario: #c2c6ce;
+  --light: #fff;
+
+  --transition: color 0.4s, background-color 0.6s ease-in-out;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-galeria {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.gal-izquierda {
+  width: 150px;
+  height: 150px;
+  background-color: var(--gris-primario);
+  margin-top: 10px;
+}
+
+.gal-derecha {
+  width: 320px;
+  height: 320px;
+  background-color: var(--gris-primario);
+
+  background-image: url(/assets/images/fondomision.jpg);
+  background-position: center;
+  background-size: cover;
+
+  justify-content: center;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.derecha-galeria {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.izquierda-galeria {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.im1 {
+  grid-column: 1;
+  background-image: url(/assets/images/fondomision.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.im2 {
+  grid-column: 2 / 4;
+  background-image: url(/assets/images/fondomision.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.im3 {
+  background-image: url(/assets/images/fondomision.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.im4 {
+  background-image: url(/assets/images/fondomision.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
