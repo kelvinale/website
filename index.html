@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plataforma Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <!-- SPINNER DE CARGA -->
+
+    <div class="spinner" id="contenedor-carga">
+      <div id="carga"></div>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus icon"></i>
+        <div class="logo_name">Plataforma</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">User</span>
+          </a>
+          <span class="tooltip">Iniciar Sesión</span>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <i class="bx bx-chat"></i>
+            <span class="links_name">Messages</span>
+          </a>
+          <span class="tooltip">Messages</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links_name">Analytics</span>
+          </a>
+          <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-folder"></i>
+            <span class="links_name">File Manager</span>
+          </a>
+          <span class="tooltip">Files</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cart-alt"></i>
+            <span class="links_name">Order</span>
+          </a>
+          <span class="tooltip">Order</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <span class="links_name">Saved</span>
+          </a>
+          <span class="tooltip">Saved</span>
+        </li> -->
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <img src="assets/img/foto.jpeg" alt="profileImg" />
+            <div class="name_job">
+              <div class="name">Nombre Apellido</div>
+              <div class="job">Cargo</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <!-- Contenido -->
+      <header class="contenedor__cabecera">
+        <div class="logo__cabecera">
+          <img src="assets/img/iutepal.png" alt="" />
+        </div>
+
+        <div class="textos__cabecera">
+          <h1>Instituto Universitario de Tecnología</h1>
+          <h2>Juan Pablo Pérez Alfonzo</h2>
+          <h3>
+            Plataforma Educativa y Dinámica de ayuda al entendimiento de la
+            materia Base de Datos dirigido a los Estudiantes del tercer (3er)
+            semestre de informática del Instituto Universitario de Tecnología
+            Juan Pablo Pérez Alfonzo.
+          </h3>
+        </div>
+
+        <button class="btn__cabecera" type="submit">
+          <a href="registro.html">Registrarme</a>
+        </button>
+      </header>
+
+      <main>
+        <!-- HISTORIA -->
+        <div id="historia" class="contenedor__historia">
+          <div class="grid__historia">
+            <div class="izquierda__historia">
+              <div class="textos__historia">
+                <span>Conocenos</span>
+                <h1>Historia</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus delectus at assumenda incidunt quam consectetur,
+                  dolores voluptatibus dicta eum voluptates est velit culpa modi
+                  ad laboriosam, impedit cupiditate consequuntur nulla.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem amet veniam, corrupti, aperiam dolores veritatis
+                  perferendis totam omnis eius pariatur architecto dicta
+                  excepturi magni minus libero sequi cumque sapiente numquam.
+                </p>
+              </div>
+            </div>
+
+            <div class="derecha__historia">
+              <div class="imagen__historia">
+                <img src="assets/img/historia.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABOUT -->
+
+        <div id="about" class="contenedor__about">
+          <div class="grid__about">
+            <div class="izquierda__about">
+              <div class="logo__about">
+                <img src="assets/icons/somos.png" alt="" />
+              </div>
+
+              <div class="textos__about">
+                <h4>¿Quienes Somos?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  illum iusto nostrum possimus nihil voluptatem voluptate fuga
+                  consectetur quasi iure. Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Repellendus, temporibus.
+                </p>
+              </div>
+            </div>
+
+            <div class="medio__about">
+              <div class="logo__about">
+                <img src="assets/icons/mision.png" alt="" />
+              </div>
+
+              <div class="textos__about">
+                <h4>Mision</h4>
+                <p>
+                  Formar Profesionales a nivel Técnico Superior Universitario
+                  capacitados para desempeñarse eficientemente en su campo
+                  laboral, tomando como guía estratégica un curriculum
+                  actualizado y adaptado a las necesidades de cada especialidad,
+                  reforzando su estructura de pensamiento para consolidar su
+                  desarrollo integral, propiciando su autorrealización en el
+                  marco de la coparticipación y solidaridad social y tomando en
+                  consideración las expectativas del sector productivo regional
+                  y nacional. Todo ello con el concurso de un cuerpo docente
+                  altamente calificado, de reconocida trayectoria profesional,
+                  en un ambiente académico y de interacción humana que facilite
+                  la integración del Estudiante a la Institución, favoreciendo
+                  el proceso de enseñanza-aprendizaje para lograr una generación
+                  de profesionales con capacidad para transformar su entorno, a
+                  través del mejoramiento de la calidad de vida de la comunidad
+                  y en consecuencia del país. Así mismo la Institución está
+                  comprometida con el proceso de actualización y renovación
+                  continua de la Ciencia, la Cultura y la Tecnología, mediante
+                  sus Programas de Investigación, Extensión, Postgrado y
+                  Producción.
+                </p>
+              </div>
+            </div>
+
+            <div class="derecha__about">
+              <div class="logo__about">
+                <img src="assets/icons/vision.png" alt="" />
+              </div>
+
+              <div class="textos__about">
+                <h4>Vision</h4>
+                <p>
+                  Consolidar su prestigio como Institución Educativa de Nivel
+                  Superior al servicio de la comunidad, brindándole la
+                  oportunidad de Cursar Estudios de gran demanda en el mercado
+                  laboral y cónsonos con las necesidades de la región y del
+                  país.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARRUSEL -->
+
+        <div id="galeria" class="contenedor__carrusel">
+          <h2>Carrousel</h2>
+          <div class="content-all">
+            <div class="content-carrousel">
+              <figure><img src="assets/img/carrusel-1.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-2.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-3.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-4.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-5.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-6.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-7.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-8.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-9.jpg" /></figure>
+              <figure><img src="assets/img/carrusel-10.jpg" /></figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- OBJETIVOS -->
+
+        <div id="objetivos" class="contenedor__objetivos">
+          <div class="grid__objetivos">
+            <div class="izquierda__objetivos">
+              <div class="imagen__objetivos">
+                <img src="assets/img/objetivo.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="derecha__objetivos">
+              <div class="textos__objetivos">
+                <span>Objetivos</span>
+                <h1>General</h1>
+                <p>
+                  Proporcionar el material de apoyo mediante actividades
+                  dinámicas en la plataforma que permita motivar a los
+                  estudiantes del Instituto Universitario de Tecnología Juan
+                  Pablo Pérez Alfonzo al entendimiento de la materia Base de
+                  Datos.
+                </p>
+
+                <span>Específicos</span>
+
+                <li>
+                  Facilitar una ayuda académica para que los estudiantes puedan
+                  aprender fácilmente de una materia tan compleja.
+                </li>
+                <li>
+                  Incentivar a los estudiantes a estudiar e inducirse al mundo
+                  de la tecnología.
+                </li>
+                <li>
+                  Dar un mayor alcance de los recursos que se podrán encontrar
+                  en la plataforma ya que se podrá acceder a cualquier hora del
+                  día.
+                </li>
+                <li>
+                  Fomentar el uso de la tecnología como técnica de enseñanza –
+                  aprendizaje.
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- contacto -->
+
+        <form  action="" class="formulario__contacto" id="formulario__contacto">
+          <h1>Déjanos un mensaje!</h1>
+
+          <!-- grupo  Nombre-->
+          <div
+            class="formulario__contacto--grupo"
+            id="formulario__contacto--nombre"
+          >
+            <label for="nombre" class="formulario__contacto--label"
+              >Nombre</label
+            >
+
+            <div class="formulario__contacto--GrupoInput">
+              <input
+                name="nombre"
+                id="nombre"
+                placeholder="Kelvin Valera"
+                type="text"
+                class="formulario__contacto--input"
+              />
+              <i
+                class="formulario__contacto--ValidacionEstado"
+                fas
+                fa-times-circle
+              ></i>
+            </div>
+            <!-- <p class="formulario__contacto--InputError">
+            El nombre tiene que ser de 4 a 16 digitos
+          </p> -->
+          </div>
+
+          <!-- grupo  telefono-->
+          <div
+            class="formulario__contacto--grupo"
+            id="formulario__contacto--GrupoTelefono"
+          >
+            <label for="telefono" class="formulario__contacto--label"
+              >Telefono</label
+            >
+
+            <div class="formulario__contacto--GrupoInput">
+              <input
+                name="telefono"
+                id="telefono"
+                placeholder="0412 000 00 00"
+                type="tel"
+                class="formulario__contacto--input"
+              />
+              <i
+                class="formulario__contacto--ValidacionEstado"
+                fas
+                fa-times-circle
+              ></i>
+            </div>
+            <!-- <p class="formulario__contacto--InputError">
+            El telefono solo puede contener numeros y un maximo de 14 digitos
+          </p> -->
+          </div>
+
+          <!-- grupo  email-->
+          <div
+            class="formulario__contacto--grupo"
+            id="formulario__contacto--GrupoNombre"
+          >
+            <label for="email" class="formulario__contacto--label">Email</label>
+
+            <div class="formulario__contacto--GrupoInput">
+              <input
+                name="email"
+                id="email"
+                placeholder="email@email.com"
+                type="email"
+                class="formulario__contacto--input"
+              />
+              <i
+                class="formulario__contacto--ValidacionEstado"
+                fas
+                fa-times-circle
+              ></i>
+            </div>
+            <!-- <p class="formulario__contacto--InputError">
+            El email solo puede contener numeros, letras, puntos, guiones y
+            guion bajo
+          </p> -->
+          </div>
+
+          <!-- grupo  mensaje-->
+          <div
+            class="formulario__contacto--grupo"
+            id="formulario__contacto--GrupoNombre"
+          >
+            <label for="mensaje" class="formulario__contacto--label"
+              >Mensaje</label
+            >
+
+            <div class="formulario__contacto--GrupoInput">
+              <textarea
+                class="formulario__contacto--textarea"
+                placeholder="Escribe tu mensaje..."
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <i
+                class="formulario__contacto--ValidacionEstado"
+                fas
+                fa-times-circle
+              ></i>
+            </div>
+            <!-- <p class="formulario__contacto--InputError">
+            El mensaje debe contener un minimo de 4 caracteres
+          </p> -->
+          </div>
+
+          <!-- <div
+          class="formulario__contacto--mensaje"
+          id="formulario__contacto--mensaje"
+        >
+          <p>
+            <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor
+            rellena el formulario correctamente.
+          </p>
+        </div> -->
+
+          <button class="btn__contacto" type="submit">Enviar</button>
+        </form>
+      </main>
+
+
+       <!-- FOOTER -->
+
+
+    <footer>
+      <div class="grupo__nav">
+
+        <div class="grupo__item">
+          <i class="fas fa-history"></i>
+          <a href="#historia">Historia</a>
+        </div>
+
+        <div class="grupo__item">
+          <i class="fas fa-info"></i>
+          <a href="#about">About</a>
+        </div>
+
+        <div class="grupo__item">
+          <i class="fas fa-image"></i>
+          <a href="#galeria">Galeria</a>
+        </div>
+
+        <div class="grupo__item">
+          <i class="fas fa-bullseye"></i>
+          <a href="#objetivos">Objetivos</a>
+        </div>
+
+        <div class="grupo__item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="#formulario__contacto">Contacto</a>
+        </div>
+      </div>
+
+      <div class="grupo__botones">
+        <button class="btn__footer"><a href="#">Registrarme</a></button
+        >
+        <button class="btn__footer"><a href="#">Iniciar Sesion</a></button>
+      </div>
+
+      
+    </footer>
+      
+    </section>
+
+   
+
+
+    <script
+      src="https://kit.fontawesome.com/70414ff70f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
