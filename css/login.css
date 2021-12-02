@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2? familia=Barlow+Semi+Condensado:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(fondo.css);
+
+:root {
+  --color--Primario: hsl(216, 52%, 12%);
+  --color--secundario: hsl(215, 39%, 31%);
+  --color--terciario: hsl(220, 59%, 85%);
+  --gris--Primario: hsl(220, 11%, 78%);
+  --blanco: hsl(0, 0%, 100%);
+  --error: hsl(0, 89%, 67%);
+  --exito: #119200;
+  --correcto: #1ed12d;
+
+  --shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
+  --transition: 0.5s ease all;
+}
+
+ body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--blanco);
+}
+
+
+
+.box__login{
+    position: relative;
+
+}
+
+.box__login .square{
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gris--Primario);
+    border-right: 1px solid var(--gris--Primario);
+    border-bottom: 1px solid var(--gris--Primario);
+    background: hsla(220, 11%, 78%, 0.322);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes animate {
+    0%, 100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+.box__login .square:nth-child(1){
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.box__login .square:nth-child(2){
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+.box__login .square:nth-child(3){
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box__login .square:nth-child(4){
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.box__login .square:nth-child(5){
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+.container__login{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: hsla(0, 0%, 100%, 0.479);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gris--Primario);
+    border-right: 1px solid var(--gris--Primario);
+    border-bottom: 1px solid var(--gris--Primario);
+    
+}
+
+.form__login{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form__login h2{
+    position: relative;
+    color: var(--color--Primario);
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.form__login h2::before{
+    content: '';
+    position: absolute;
+    left: 0 ;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: var(--color--Primario);
+
+}
+
+.form__login .inputbox__login{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form__login .inputbox__login input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid var(--gris--Primario);
+    border-right: 1px solid var(--gris--Primario);
+    border-bottom: 1px solid var(--gris--Primario);
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--color--Primario);
+    box-shadow: var(--shadow);
+}
+
+.form__login input::placeholder{
+    color: var(--gris--Primario);
+}
+
+.form__login input[type="submit"]{
+    background: var(--color--Primario);
+    color: var(--gris--Primario);
+    max-width: 70%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.forget{
+    margin-top: 4px;
+    color: var(--gris--Primario);
+}
+
+.forget a{
+    color: var(--color--secundario);
+    font-weight: 600;
+    font-size: .8em;
+    text-decoration: none;
+}
+
+@media screen  and (max-width: 600px){
+    .container__login{
+        width: 350px;
+    }
+}
+
+
+.formulario__grupo-incorrecto {
+    color:hsl(0, 89%, 67%) ; 
+}
+
+.formulario__grupo-correcto{
+    color: green;
+}
+
+.formulario__input{
+    padding: 10px;
+    font-size: .8em;
+}

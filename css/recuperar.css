@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2? familia=Barlow+Semi+Condensado:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(fondo.css);
+
+:root {
+  --color--Primario: hsl(216, 52%, 12%);
+  --color--secundario: hsl(215, 39%, 31%);
+  --color--terciario: hsl(220, 59%, 85%);
+  --gris--Primario: hsl(220, 11%, 78%);
+  --blanco: hsl(0, 0%, 100%);
+  --error: hsl(0, 89%, 67%);
+  --exito: #119200;
+  --correcto: #1ed12d;
+
+  --shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
+  --transition: 0.5s ease all;
+}
+
+ body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  overflow: hidden;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--color-primario);
+}
+
+.contenedor__recuperar{
+    width: 500px;
+    height: 300px;
+    background: hsla(0, 0%, 100%, 0.479);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 99;
+}
+
+.contenedor h1{
+    margin-top: -50px;
+    color: var(--color-primario);
+}
+
+form{
+    width: 70%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid var(--gris--Primario);
+    border-right: 1px solid var(--gris--Primario);
+    border-bottom: 1px solid var(--gris--Primario);
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--color--Primario);
+    box-shadow: var(--shadow);
+}
+
+
+.btn__recuperar{
+    margin-top: 30px;
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    border: none;
+    background: var(--color--secundario);
+    transition: var(--transition);
+}
+
+.btn__recuperar a{
+    color: var(--gris--Primario);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8em;
+} 
+
+.btn__recuperar:hover{
+    background: var(--color--Primario);
+    transition: var(--transition);
+}
+
+button:hover a{
+    color: var(--blanco);
+}
+
+
+@media screen  and (max-width: 600px){
+
+    .contenedor__recuperar h1{
+        font-size: 1.5em;
+    }
+
+    label{
+        font-size: 1.2em;
+    }
+
+    .contenedor__recuperar{
+        width: 350px;
+        height: 400px;
+    }
+}
